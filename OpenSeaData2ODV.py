@@ -92,7 +92,7 @@ SPEC = {
     "Temperature Sea [~^o~#C]": {"src": "Temperature °C (Sea)"},
     "Temperature Air [~^o~#C]": {"src": "Temperature °C (Air)"},
     #https://vocab.nerc.ac.uk/collection/P01/current/PHXXZZXX/
-    "pH": {"src": "pH-Wert"},
+    "pH": {"src": "pH-value"},
     #https://vocab.nerc.ac.uk/collection/P01/current/PSALZZXX/
     "Practical Salinity": {"src": "Salinity (‰)"},
     "Wind Speed [m/s]": {"src": "Wind speed (m/s)"},
