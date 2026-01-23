@@ -17,11 +17,20 @@
 //<MetaVariable>label="Latitude [degrees_north]" var_type="METALATITUDE" value_type="FLOAT" qf_schema="ODV" significant_digits="3" comment=""</MetaVariable>
 //
 //<DataVariable>label="time_ISO8601" value_type="DOUBLE" qf_schema="ODV" significant_digits="4" is_primary_variable="T" comment="" key_variable=""</DataVariable>
-//<DataVariable>label="Temperature Ocean [~^o~#C]" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="Temperature (ITS-90) of the water body, https://vocab.nerc.ac.uk/collection/P01/current/TEMPP901/ Codes: SDN:P01::TEMPP901" key_variable="1"</DataVariable>
+//<MetaVariable>label="Time TNW" value_type="INDEXED_TEXT" qf_schema="ODV" significant_digits="0"  comment="v TNW=before tide low, TNW=at tide low, n TNW=after tide low" </MetaVariable>
+//<MetaVariable>label="Weather" value_type="INDEXED_TEXT" qf_schema="ODV" significant_digits="0"  comment="" </MetaVariable>
+//<MetaVariable>label="Group" value_type="INDEXED_TEXT" qf_schema="ODV" significant_digits="0"  comment="" </MetaVariable>
+//<MetaVariable>label="Comment" value_type="INDEXED_TEXT" qf_schema="ODV" significant_digits="0"  comment="" </MetaVariable>
+//<MetaVariable>label="Measurement instrument" value_type="INDEXED_TEXT" qf_schema="ODV" significant_digits="0"  comment="" </MetaVariable>
+//<DataVariable>label="Temperature Sea [~^o~#C]" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="Temperature (ITS-90) of the water body, https://vocab.nerc.ac.uk/collection/P01/current/TEMPP901/ Codes: SDN:P01::TEMPP901" key_variable="1"</DataVariable>
 //<DataVariable>label="Temperature Air [~^o~#C]" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="" key_variable=""</DataVariable>
 //<DataVariable>label="pH" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="pH (unspecified scale) of the water body, https://vocab.nerc.ac.uk/collection/P01/current/PHXXZZXX/ Codes: SDN:P01::PHXXZZXX" key_variable="3"</DataVariable>
 //<DataVariable>label="Practical Salinity" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="Practical salinity of the water body by computation using UNESCO 1983 algorithm, https://vocab.nerc.ac.uk/collection/P01/current/PSALZZXX/ Codes: SDN:P01::PSALZZXX" key_variable="4"</DataVariable>
 //<DataVariable>label="Wind Speed [m/s]" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="" key_variable=""</DataVariable>
 //<DataVariable>label="Illuminance [lux]" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="" key_variable=""</DataVariable>
+//<DataVariable>label="Secchi depth [m]" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="" key_variable=""</DataVariable>
+//<DataVariable>label="Euphotic zone (Secchi depth x 2) [m]" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="" key_variable=""</DataVariable>
+//<DataVariable>label="1/2 Secchi depth [m]" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="" key_variable=""</DataVariable>
+//<DataVariable>label="Color of Forel-Ule scale at 1/2 Secchi depth" value_type="FLOAT" qf_schema="ODV" significant_digits="2" is_primary_variable="F" comment="" key_variable=""</DataVariable>
 //
-Cruise	Station	Type	yyyy-mm-ddThh:mm:ss.sss	Longitude [degrees_east]	Latitude [degrees_north]	time_ISO8601	Temperature Ocean [~^o~#C]	Temperature Air [~^o~#C]	pH	Practical Salinity	Wind Speed [m/s]	Illuminance [lux]
+Cruise	Station	Type	yyyy-mm-ddThh:mm	Longitude [degrees_east]	Latitude [degrees_north]	time_ISO8601	Time TNW	Temperature Sea [~^o~#C]	Temperature Air [~^o~#C]	pH	Practical Salinity	Wind Speed [m/s]	Illuminance [lux]	Secchi depth [m]	Euphotic zone (Secchi depth x 2) [m]	1/2 Secchi depth [m]	Color of Forel-Ule scale at 1/2 Secchi depth	Weather	Group	Comment	Measurement instrument
