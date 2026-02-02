@@ -87,7 +87,6 @@ SPEC = {
     "xlon": {"src": "Longitude [degrees_east]"},
     "xlat": {"src": "Latitude [degrees_north]"},
     "time_ISO8601": {"ref": "yyyy-mm-ddThh:mm"},
-    "Time TNW": {"src": "Time TNW"},    
     #use later in header https://vocab.nerc.ac.uk/collection/P01/current/TEMPP901/
     "Temperature Sea [~^o~#C]": {"src": "Temperature °C (Sea)"},
     "Temperature Air [~^o~#C]": {"src": "Temperature °C (Air)"},
@@ -101,6 +100,7 @@ SPEC = {
     "Euphotic zone (Secchi depth x 2) [m]": {"src": "Euphotic zone (Secchi depth x 2) (m)"},
     "1/2 Secchi depth [m]": {"src": "1/2 Secchi depth (m)"},
     "Color of Forel-Ule scale at 1/2 Secchi depth": {"src": "Color of Forel-Ule scale at 1/2 Secchi depth"},
+    "Time TNW": {"src": "Time TNW"},    
     "Weather": {"src": "Weather"},
     "Group": {"src": "Group"},
     "Comment": {"src": "Comment"},
