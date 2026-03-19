@@ -2,7 +2,9 @@
 
 ## 2026/03/19
 
+- Read input from local folder
 - Added Quality Flags
+
 
 ## 2026/02/02
 

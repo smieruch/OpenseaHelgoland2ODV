@@ -20,14 +20,13 @@ pd.set_option("display.width", None)
 
 
 ###-------------------set parameters-------------------###
-DATA_DIR = Path("/home/smieruch/Projects/Helgoland/Full/20260220")
-INPUT_XLSX = "Abiotics ODV Quality Flags.xlsx"
+INPUT_XLSX = Path("Abiotics ODV Quality Flags.xlsx")
 SHEET_NAMES = ["Abiotics Sea", "Abiotics Pool", "Abiotics Harbour"]
-HEADER_FILE = DATA_DIR / "helgoland_odv_header.txt"
+HEADER_FILE = Path("helgoland_odv_header.txt")
 CRUISE_NAME = "Helgoland_OpenSea"
 #STATION_NAME = "Felswatt" -> we will use the SHEET_NAMES
 TYPE_NAME = "B"
-OUTFILE = DATA_DIR / f"{CRUISE_NAME}.txt"
+OUTFILE = Path("Helgoland_OpenSea.txt")
 ###
 ###---new meta variables---###
 #INSTRUMENT_TEMPERATURE = ""
@@ -169,7 +168,7 @@ def main():
     rows = []
     for name in SHEET_NAMES:
         print(f"proceccing sheet: {name}")
-        df_in = pd.read_excel(DATA_DIR / INPUT_XLSX, sheet_name=name) 
+        df_in = pd.read_excel(INPUT_XLSX, sheet_name=name) 
         df_in.columns = df_in.columns.str.strip() # remove space
         rows.append(transform_one_file(df_in, sheet_name=name))
         #print(df_in.head())
