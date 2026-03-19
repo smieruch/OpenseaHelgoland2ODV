@@ -1,5 +1,9 @@
 # CHANGES
 
+## 2026/03/19
+
+- Added Quality Flags
+
 ## 2026/02/02
 
 - Change Time TNW, Weather, Group, Comment, Measurement instrument to DataVariable

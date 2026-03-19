@@ -20,8 +20,8 @@ pd.set_option("display.width", None)
 
 
 ###-------------------set parameters-------------------###
-DATA_DIR = Path("/home/smieruch/Projects/Helgoland/Full")
-INPUT_XLSX = "Abiotics ODV.xlsx"
+DATA_DIR = Path("/home/smieruch/Projects/Helgoland/Full/20260220")
+INPUT_XLSX = "Abiotics ODV Quality Flags.xlsx"
 SHEET_NAMES = ["Abiotics Sea", "Abiotics Pool", "Abiotics Harbour"]
 HEADER_FILE = DATA_DIR / "helgoland_odv_header.txt"
 CRUISE_NAME = "Helgoland_OpenSea"
@@ -89,14 +89,21 @@ SPEC = {
     "time_ISO8601": {"ref": "yyyy-mm-ddThh:mm"},
     #use later in header https://vocab.nerc.ac.uk/collection/P01/current/TEMPP901/
     "Temperature Sea [~^o~#C]": {"src": "Temperature °C (Sea)"},
+    "QV:SEADATANET:Temperature Sea [~^o~#C]": {"src": "QV:SEADATANET:Temperature °C (Sea)"},
     "Temperature Air [~^o~#C]": {"src": "Temperature °C (Air)"},
+    "QV:SEADATANET:Temperature Air [~^o~#C]": {"src": "QV:SEADATANET:Temperature °C (Air)"},
     #https://vocab.nerc.ac.uk/collection/P01/current/PHXXZZXX/
     "pH": {"src": "pH-value"},
+    "QV:SEADATANET:pH": {"src": "QV:SEADATANET:pH-value"},
     #https://vocab.nerc.ac.uk/collection/P01/current/PSALZZXX/
-    "Practical Salinity": {"src": "Salinity (‰)"},
+    "Practical Salinity": {"src": "Practical Salinity (‰)"},
+    "QV:SEADATANET:Practical Salinity": {"src": "QV:SEADATANET:Practical Salinity (‰)"},
     "Wind Speed [m/s]": {"src": "Wind speed (m/s)"},
+    "QV:SEADATANET:Wind Speed [m/s]": {"src": "QV:SEADATANET:Wind speed (m/s)"},
     "Illuminance [lux]": {"src": "Light intensity (lux)"},
+    "QV:SEADATANET:Illuminance [lux]": {"src": "QV:SEADATANET:Light intensity (lux)"},
     "Secchi depth [m]": {"src": "Secchi depth (m)"},
+    "QV:SEADATANET:Secchi depth [m]": {"src": "QV:SEADATANET:Secchi depth (m)"},
     "Euphotic zone (Secchi depth x 2) [m]": {"src": "Euphotic zone (Secchi depth x 2) (m)"},
     "1/2 Secchi depth [m]": {"src": "1/2 Secchi depth (m)"},
     "Color of Forel-Ule scale at 1/2 Secchi depth": {"src": "Color of Forel-Ule scale at 1/2 Secchi depth"},
